@@ -1,0 +1,18 @@
+React Native Router (v4.x)
+-npm react-native-router-flux
+install the following libraries first
+react-native-screens by ( npm install react-native-screens)
+react-native-gesture-handler ( npm install react-native-gesture-handler)
+react-native-reanimated (npm install react-native-reanimated)
+react-native-safe-area-context (npm install react-native-safe-area-context)
+@react-native-community/masked-view (npm install @react-native-community/masked-view)
+Usage
+const App = () => (
+  <Router>
+    <Stack key="root">
+      <Scene key="login" component={Login} title="Login" />
+      <Scene key="register" component={Register} title="Register" />
+      <Scene key="home" component={Home} />
+    </Stack>
+  </Router>
+);
